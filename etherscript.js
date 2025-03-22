@@ -8,3 +8,15 @@ function placeOrder() {
         alert("Order not placed. Please fill in all details.");
     }
 }
+function submitComplaint() {
+    const issueDetails = prompt("Please enter the details of your complaint:");
+    const name = prompt("Please enter your name:");
+    const contactNumber = prompt("Please enter your contact number:");
+    const hasOrdered = prompt("Have you ordered from here? (yes/no)").toLowerCase();
+  
+    if (hasOrdered === "yes") {
+      alert("Complaint Submitted Successfully");
+    } else {
+      alert("Can't accept your Complaint");
+    }
+  }
